@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireHub | Find Your Dream Job</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Hire<span>Hub.</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#jobs">Find Jobs</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+    <a href="#jobs" class="nav-btn">Explore Jobs</a>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="tag">YOUR CAREER STARTS HERE</span>
+        <h1>Find a job that<br>matches your <span>ambition.</span></h1>
+        <p>Discover opportunities, connect with companies and take the next step in your career.</p>
+        <a href="#jobs" class="primary-btn">Explore Opportunities →</a>
+    </div>
+</section>
+
+<section class="jobs-section" id="jobs">
+    <div class="section-heading">
+        <span class="tag">OPPORTUNITIES</span>
+        <h2>Find Your Next Job</h2>
+        <p>Explore the latest opportunities.</p>
+    </div>
+
+    <div class="filter-panel">
+        <input type="text" id="searchInput" placeholder="Search job title or company">
+
+        <select id="locationFilter">
+            <option value="">All Locations</option>
+        </select>
+
+        <select id="roleFilter">
+            <option value="">All Roles</option>
+        </select>
+
+        <button id="clearBtn" class="secondary-btn" type="button">Clear</button>
+    </div>
+
+    <p class="result-count"><span id="jobCount">0</span> jobs available</p>
+
+    <div id="jobContainer" class="job-grid"></div>
+</section>
+
+<footer>
+    <h2>HireHub.</h2>
+    <p>Connecting talent with opportunity.</p>
+    <p>© 2026 HireHub. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireHub | Apply for Job</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Hire<span>Hub.</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
+
+<section class="form-section">
+    <div class="form-card">
+        <span class="tag">TAKE THE NEXT STEP</span>
+        <h1>Job Application</h1>
+        <p id="selectedJob">Complete the form below to apply.</p>
+
+        <form id="applicationForm">
+            <label>Full Name</label>
+            <input type="text" id="applicantName" placeholder="Enter your full name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="applicantEmail" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="applicantPhone" placeholder="10-digit mobile number"
+                   pattern="[6-9][0-9]{9}" maxlength="10" required>
+
+            <label>Skills</label>
+            <textarea id="applicantSkills" placeholder="Mention your skills" required></textarea>
+
+            <label>Why should we hire you?</label>
+            <textarea id="applicantMessage" placeholder="Write a short introduction" required></textarea>
+
+            <button type="submit" class="primary-btn full-btn">Submit Application</button>
+        </form>
+
+        <p id="formMessage" class="form-message"></p>
+        <a href="index.html" class="back-link">← Back to jobs</a>
+    </div>
+</section>
+
+<script src="js/application.js"></script>
+</body>
+</html>

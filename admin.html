@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireHub | Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Hire<span>Hub.</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="apply.html">Apply</a>
+    </nav>
+</header>
+
+<section class="admin-section">
+    <div class="section-heading">
+        <span class="tag">CONTROL PANEL</span>
+        <h1>Admin Dashboard</h1>
+        <p>Add new job opportunities and manage existing listings.</p>
+    </div>
+
+    <div class="form-card admin-form-card">
+        <h2>Add a New Job</h2>
+
+        <form id="jobForm">
+            <label>Job Title</label>
+            <input type="text" id="title" placeholder="e.g. Python Developer" required>
+
+            <label>Company Name</label>
+            <input type="text" id="company" placeholder="Company name" required>
+
+            <label>Location</label>
+            <input type="text" id="location" placeholder="e.g. Hyderabad" required>
+
+            <label>Role</label>
+            <select id="role" required>
+                <option value="">Select Role</option>
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="Data Science">Data Science</option>
+                <option value="AI/ML">AI/ML</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Job Type</label>
+            <select id="type" required>
+                <option value="">Select Job Type</option>
+                <option value="Full Time">Full Time</option>
+                <option value="Part Time">Part Time</option>
+                <option value="Internship">Internship</option>
+            </select>
+
+            <label>Salary</label>
+            <input type="text" id="salary" placeholder="e.g. ₹5 - 7 LPA" required>
+
+            <button type="submit" class="primary-btn full-btn">+ Add Job</button>
+        </form>
+
+        <p id="adminMessage" class="form-message"></p>
+    </div>
+
+    <div class="admin-list">
+        <h2>Manage Jobs (<span id="adminJobCount">0</span>)</h2>
+        <div id="adminJobList"></div>
+    </div>
+
+    <div class="admin-list">
+        <h2>Received Applications (<span id="applicationCount">0</span>)</h2>
+        <div id="applicationList"></div>
+    </div>
+</section>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
